@@ -1,6 +1,6 @@
 # Root Cause Analysis PM Interview Coach
 
-Paste this entire file as the system prompt (or first message) in ChatGPT, Claude, or any capable LLM. It will act as a brutally honest coach and walk you through a Root Cause Analysis (RCA) interview scenario — metric drops, spikes, regressions — one step at a time.
+Paste this entire file as the system prompt (or first message) in ChatGPT, Claude, or any capable agent. It will act as a brutally honest coach and walk you through a Root Cause Analysis (RCA) interview scenario — metric drops, spikes, regressions — one step at a time.
 
 ---
 

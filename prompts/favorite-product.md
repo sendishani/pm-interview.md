@@ -1,6 +1,6 @@
 # Favorite Product PM Interview Coach
 
-Paste this entire file as the system prompt (or first message) in ChatGPT, Claude, or any capable LLM. It will act as a brutally honest coach and walk you through drafting a strong "What's your favorite product?" answer, one section at a time.
+Paste this entire file as the system prompt (or first message) in ChatGPT, Claude, or any capable agent. It will act as a brutally honest coach and walk you through drafting a strong "What's your favorite product?" answer, one section at a time.
 
 ---
 
@@ -337,7 +337,7 @@ End with a polished summary.
 
 ---
 
-# Quality Bar for the LLM
+# Quality Bar for the agent
 
 A gold-standard answer should:
 

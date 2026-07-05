@@ -1,6 +1,8 @@
 # pm-interview.md
 
-Battle-tested prompts for practicing Product Manager interview questions with any LLM. Paste one as a system prompt and the model becomes a brutally honest interview coach that walks you through your answer one section at a time.
+**System prompts to practice Product Manager interviews with ChatGPT, Claude, or any agent.** Free, MIT-licensed, and structured as opinionated coaching flows — paste one file into the model and it walks you through drafting a strong answer to a Favorite Product or Root Cause Analysis (RCA) interview question, one section at a time, with brutally honest feedback.
+
+Built for APM / PM candidates preparing for interviews at Google, Meta, Amazon, Uber, Stripe, TikTok, and any other company that runs product-sense or metric-diagnosis rounds.
 
 Two prompts to start:
 
@@ -25,12 +27,12 @@ Click **Open in Claude** or **Open in ChatGPT** above. The link pre-fills a mess
 
 1. Open the raw prompt file (e.g. [favorite-product.md](prompts/favorite-product.md)).
 2. Select all → copy.
-3. Paste it as the **first message** in a new ChatGPT / Claude / other LLM chat.
+3. Paste it as the **first message** in a new ChatGPT / Claude / other agent chat.
 4. Send. The model will greet you and start coaching.
 
 ### Option 3: As a real system prompt
 
-If your LLM UI has a dedicated system-prompt / custom-instructions field (Claude Projects, ChatGPT Custom GPTs, most API playgrounds), paste the file there instead of as a chat message. The behavior is identical, just cleaner.
+If your agent UI has a dedicated system-prompt / custom-instructions field (Claude Projects, ChatGPT Custom GPTs, most API playgrounds), paste the file there instead of as a chat message. The behavior is identical, just cleaner.
 
 ---
 
@@ -52,7 +54,7 @@ If you want a chatbot that tells you your answer is great, use a different one.
 
 ```
 pm-interview.md/
-├── prompts/         # paste-ready system prompts (works with any LLM)
+├── prompts/         # paste-ready system prompts (works with any agent)
 ├── examples/        # annotated gold transcripts (coming soon)
 ├── CHANGELOG.md
 └── LICENSE
@@ -69,6 +71,31 @@ New prompts, better framework sections, or annotated gold transcripts are all we
 - One example session showing what a good coaching turn looks like
 
 Keep the "no-yapping, brutally honest, one-section-at-a-time" tone. That's the point of view of this repo.
+
+---
+
+## FAQ
+
+### What's the best ChatGPT / Claude prompt for practicing PM interviews?
+The two files in this repo (`prompts/favorite-product.md` and `prompts/root-cause-analysis.md`) are structured as full system prompts specifically for coaching, not for generating cookie-cutter answers. They critique your drafts one section at a time instead of writing the whole answer for you — which is what makes them work as practice tools.
+
+### How do I use ChatGPT to prepare for a product manager interview?
+Open a new chat, paste one of the prompt files as your first message (or into ChatGPT's custom-instructions field), and start drafting. The model will greet you, ask which product / scenario you want to work on, and walk you through the framework step by step. Same pattern in Claude, Gemini, or any other capable agent.
+
+### What is a Favorite Product PM interview question?
+A product-sense question asking you to pick a product you love, explain why it's great, identify user segments and pain points, propose an improvement, weigh tradeoffs, and define success metrics. Common at Google APM, Meta RPM, Uber, Stripe, and most consumer / marketplace PM loops. The framework in [`prompts/favorite-product.md`](prompts/favorite-product.md) covers all 14 sections a strong answer needs.
+
+### What is a Root Cause Analysis (RCA) PM interview question?
+A metric-diagnosis question like "spend is down 20%, what happened?" or "TikTok LIVE sessions dropped — investigate." Tests structured thinking under ambiguity: clarify the metric, validate instrumentation, segment, build a hypothesis tree, prioritize, name a leading hypothesis, propose fixes, define success. Common at TikTok, Meta, Amazon, DoorDash, Netflix. The framework in [`prompts/root-cause-analysis.md`](prompts/root-cause-analysis.md) walks the full flow.
+
+### Why not just ask ChatGPT directly?
+Because default agent behavior is to write a polished answer *for* you — which teaches you nothing. These prompts flip the dynamic: the model refuses to draft the answer, asks *you* to draft, then critiques. That's the difference between reading an interview book and actually rehearsing.
+
+### Does this work for APM programs (Google APM, Meta RPM, Microsoft PM Explore, etc.)?
+Yes. The frameworks are calibrated to the senior-PM answer bar used across FAANG + APM programs. If you're targeting a specific company (e.g. TikTok governance, Uber marketplace, Stripe payments), tell the coach at the start of the session and it will tailor the practice scenario.
+
+### Can I use these prompts commercially?
+Yes — MIT license. Use them in your own coaching product, in training material, in courses, in a competitor to this repo, whatever. Attribution appreciated but not required.
 
 ---
 

@@ -1,39 +1,36 @@
 # pm-interview.md
 
-Battle-tested prompts for practicing Product Manager interview questions with any LLM. No account, no site, no signup — just the prompts.
+Battle-tested prompts for practicing Product Manager interview questions with any LLM. Paste one as a system prompt and the model becomes a brutally honest interview coach that walks you through your answer one section at a time.
 
 Two prompts to start:
 
-| Prompt | What it drills | Where |
-| --- | --- | --- |
-| **Favorite Product** | Product taste, customer empathy, business/strategy, improvement + metrics | [`prompts/favorite-product.md`](prompts/favorite-product.md) |
-| **Root Cause Analysis** | Structured diagnosis of metric drops — clarify, segment, hypothesize, prioritize, fix | [`prompts/root-cause-analysis.md`](prompts/root-cause-analysis.md) |
+| Prompt | What it drills | Open in Claude | Open in ChatGPT | Raw |
+| --- | --- | :---: | :---: | :---: |
+| **Favorite Product** | Product taste, customer empathy, business/strategy, improvement + metrics | [![Open in Claude](https://img.shields.io/badge/Open_in_Claude-000?logo=anthropic&logoColor=white)](https://claude.ai/new?q=Act%20as%20a%20PM%20interview%20coach.%20Fetch%20and%20follow%20this%20system%20prompt%20verbatim%3A%20https%3A%2F%2Fraw.githubusercontent.com%2Fsendishani%2Fpm-interview.md%2Fmain%2Fprompts%2Ffavorite-product.md) | [![Open in ChatGPT](https://img.shields.io/badge/Open_in_ChatGPT-10a37f?logo=openai&logoColor=white)](https://chatgpt.com/?prompt=Act%20as%20a%20PM%20interview%20coach.%20Fetch%20and%20follow%20this%20system%20prompt%20verbatim%3A%20https%3A%2F%2Fraw.githubusercontent.com%2Fsendishani%2Fpm-interview.md%2Fmain%2Fprompts%2Ffavorite-product.md) | [`.md`](prompts/favorite-product.md) |
+| **Root Cause Analysis** | Structured diagnosis of metric drops — clarify, segment, hypothesize, prioritize, fix | [![Open in Claude](https://img.shields.io/badge/Open_in_Claude-000?logo=anthropic&logoColor=white)](https://claude.ai/new?q=Act%20as%20a%20PM%20interview%20coach.%20Fetch%20and%20follow%20this%20system%20prompt%20verbatim%3A%20https%3A%2F%2Fraw.githubusercontent.com%2Fsendishani%2Fpm-interview.md%2Fmain%2Fprompts%2Froot-cause-analysis.md) | [![Open in ChatGPT](https://img.shields.io/badge/Open_in_ChatGPT-10a37f?logo=openai&logoColor=white)](https://chatgpt.com/?prompt=Act%20as%20a%20PM%20interview%20coach.%20Fetch%20and%20follow%20this%20system%20prompt%20verbatim%3A%20https%3A%2F%2Fraw.githubusercontent.com%2Fsendishani%2Fpm-interview.md%2Fmain%2Fprompts%2Froot-cause-analysis.md) | [`.md`](prompts/root-cause-analysis.md) |
 
-Every prompt is one self-contained markdown file. Paste it as the system prompt, then just start talking to the model. That's the whole thing.
+Every prompt is one self-contained markdown file. Paste it as the system prompt and start talking to the model. That's the whole thing.
 
 ---
 
 ## How to use
 
-### Claude (claude.ai, API, or Claude Code)
+### Option 1: One-click (recommended)
 
-1. Copy the contents of the prompt file.
-2. Paste it as the **system prompt** in a new conversation.
-3. Start with something like `Coach me through the favorite product question. My product is Notion.`
+Click **Open in Claude** or **Open in ChatGPT** above. The link pre-fills a message asking the model to fetch this repo's raw prompt file and follow it as its system prompt. Say hi and start practicing.
 
-### ChatGPT / other chat UIs without a system prompt field
+*Note: Claude's web fetch is generally reliable. ChatGPT's browsing depends on your plan; if the fetch fails, fall back to Option 2.*
 
-Paste the prompt as your **first message**, followed by:
+### Option 2: Copy-paste
 
-```
-Take on the role described above. My first answer is coming next.
-```
+1. Open the raw prompt file (e.g. [favorite-product.md](prompts/favorite-product.md)).
+2. Select all → copy.
+3. Paste it as the **first message** in a new ChatGPT / Claude / other LLM chat.
+4. Send. The model will greet you and start coaching.
 
-Then send your actual practice answer as the second message.
+### Option 3: As a real system prompt
 
-### As a Claude Skill
-
-Each prompt is also packaged as a `.skill` bundle in [`skills/`](skills/). Drop it into your Claude Skills directory and Claude will auto-load it when you ask about that interview type. See the [Anthropic docs](https://docs.anthropic.com) for skill install paths.
+If your LLM UI has a dedicated system-prompt / custom-instructions field (Claude Projects, ChatGPT Custom GPTs, most API playgrounds), paste the file there instead of as a chat message. The behavior is identical, just cleaner.
 
 ---
 
@@ -56,7 +53,6 @@ If you want a chatbot that tells you your answer is great, use a different one.
 ```
 pm-interview.md/
 ├── prompts/         # paste-ready system prompts (works with any LLM)
-├── skills/          # Claude Skills bundles (.skill)
 ├── examples/        # annotated gold transcripts (coming soon)
 ├── CHANGELOG.md
 └── LICENSE
@@ -69,7 +65,7 @@ pm-interview.md/
 New prompts, better framework sections, or annotated gold transcripts are all welcome. Open a PR with:
 
 - A specific interview question type (e.g. estimation, product design, execution)
-- A single self-contained `.md` file in `prompts/`
+- A single self-contained `.md` file in `prompts/` structured as: **role → behavior rules → first turn → reference framework**
 - One example session showing what a good coaching turn looks like
 
 Keep the "no-yapping, brutally honest, one-section-at-a-time" tone. That's the point of view of this repo.

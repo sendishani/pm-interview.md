@@ -1,6 +1,6 @@
 # pm-interview.md
 
-**System prompts to practice Product Manager interviews with ChatGPT, Claude, or any agent.** Free, MIT-licensed, and structured as opinionated coaching flows — paste one file into the model and it walks you through drafting a strong answer to a Favorite Product or Root Cause Analysis (RCA) interview question, one section at a time, with brutally honest feedback.
+**System prompts to practice Product Manager interviews with ChatGPT, Claude, or any agent.**  Structured as opinionated coaching flows — paste one file into the model and it walks you through drafting a strong answer to a Favorite Product or Root Cause Analysis (RCA) interview question, one section at a time, with brutally honest feedback.
 
 Built for APM / PM candidates preparing for interviews at Google, Meta, Amazon, Uber, Stripe, TikTok, and any other company that runs product-sense or metric-diagnosis rounds.
 
